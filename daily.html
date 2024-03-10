@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+       height: 300px;
+       border: solid 2px black;
+       padding: 5px;
+       display: grid;
+       grid-template-rows: repeat(8, 1fr) ;
+       grid-template-columns: 13 3fr;
+       gap: 10px 10px;
+   
+   }
+    .element{
+   display:flex;
+   flex-direction: row;
+   flex:1;
+   border: solid 2px black;
+   height: 40px;
+   width: 40px;
+   background-color: yellow;
+    }
+    .left{
+        /* flex-direction: row; */
+        /* align-items: flex-start; */
+    }
+    .one{
+        grid-row: 2;
+        grid-column: 1; 
+    }
+    .two{
+        grid-row: 4;
+        grid-column: 1;    
+    }
+    .three{
+        grid-row: 6;
+        grid-column: 1; 
+    }
+    .four{
+        grid-row: 8;
+        grid-column: 1; 
+    }
+    .five{
+        grid-row: 5;
+        grid-column: 4; 
+    }
+    .six{
+        grid-row: 5;
+        grid-column: 6; 
+    }
+    .seven{
+        grid-row: 5;
+        grid-column: 8; 
+    }
+    .eight{
+        grid-row: 5;
+        grid-column: 10; 
+    }
+    .nine{
+        grid-row: 2;
+        grid-column: 13;
+    }
+    .ten{
+        grid-row: 4;
+        grid-column: 13;
+    }
+    .eleven{
+        grid-row: 6;
+        grid-column: 13;
+    }
+    .twelve{
+        grid-row: 8;
+        grid-column: 13;
+    }
+</style>
+<body>
+
+    <div class="container">
+        <div class="element left one"></div>       
+        <div class="element left two"></div>       
+        <div class="element left three"></div>       
+        <div class="element left four"></div>       
+        <div class="element center five"></div>       
+        <div class="element center six"></div>       
+        <div class="element center seven "></div>       
+        <div class="element center eight "></div>       
+        <div class="element right nine "></div>       
+        <div class="element right ten "></div>       
+        <div class="element right eleven "></div>       
+        <div class="element right twelve "></div>       
+        </div>        
+    </div>
+</body>
+</html>

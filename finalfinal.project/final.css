@@ -1,0 +1,45 @@
+body {
+    background-color: lavender; 
+    color: darkgray;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, select, button {
+    margin-bottom: 10px;
+    width: calc(100% - 20px);
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: lightblue;
+}
+
+button {
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue; 
+}
+
+#expense-log {
+    text-align: left;
+    margin-top: 20px;
+}
+
+#pie-chart {
+    margin-top: 20px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+    .container{
+       height: 300px;
+       border: solid 2px black;
+       padding: 5px;
+       display: grid;
+       grid-template-rows: (5, 1fr);
+       grid-template-columns: (3 , 1fr);
+       gap: 3px 2px;
+   
+   }
+    .element{
+   display:flex;
+   flex-direction: row;
+   flex:1;
+   border: solid 2px black;
+    }
+    .one{
+        grid-row: 1;
+        grid-column: 1 / span 3;
+    }
+    .two{
+        grid-row: 2 / span 2;
+    }
+    .five{
+        grid-row: 3;
+        grid-column: 2 / span 2;
+    }
+    .six{
+        grid-row: 4;
+        grid-column: 1 / span 2;
+    }
+    .eight{
+        grid-row: 5;
+        grid-column: 1 / span 3;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="element one"></div>       
+        <div class="element two"></div>       
+        <div class="element three"></div>       
+        <div class="element four"></div>       
+        <div class="element five"></div>       
+        <div class="element six"></div>       
+        <div class="element seven"></div>       
+        <div class="element eight"></div>       
+        </div>        
+    </div> 
+</body>
+</html>
